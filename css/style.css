@@ -1,0 +1,154 @@
+﻿html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body, div, label, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+textarea
+{
+    resize: none;
+}
+fieldset, img
+{
+    border: 0;
+}
+address, caption, cite, code, dfn, em, th, var
+{
+    font-style: normal;
+    font-weight: normal;
+}
+li
+{
+    list-style: none;
+}
+caption, th
+{
+    text-align: left;
+}
+q:before, q:after
+{
+    content: '';
+}
+abbr, acronym
+{
+    border: 0;
+    font-variant: normal;
+}
+input.labelbox
+{
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: normal;
+}
+sup
+{
+    vertical-align: text-top;
+}
+sub
+{
+    vertical-align: text-bottom;
+}
+del, ins
+{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, input, textarea, select
+{
+    font-size: 100%;
+}
+.clearit
+{
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.main
+{
+    margin: 20px auto;
+    width: 890px;
+    height: 140px;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+#pic
+{
+    width: 840px;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+#pic li
+{
+    float: left;
+    margin: 5px;
+}
+#left, #right
+{
+    display: block;
+    width: 22px;
+    height: 100%;
+    float: left;
+}
+#left
+{
+    background: url(img/left.png) no-repeat center;
+}
+#right
+{
+    background: url(img/right.png) no-repeat center;
+}
+
+#dots {
+    position: absolute;
+bottom: 0;
+height: 30px;
+z-index: 99;
+left: 0;
+width: 100%;
+    background-color: #999999;
+    text-align: center;
+}
+#dots span {
+    float: left;
+width: 22px;
+height: 22px;
+cursor: pointer;
+}
+.dotItem{background:url(img/point.png) 0px 0px  no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='css/img/point.png');}
+.dotItemOn{background:url(img/point_cur.png) 0px 0px  no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='css/img/point_cur.png');}

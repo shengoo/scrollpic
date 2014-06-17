@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>        <link href="css/style.css" rel="stylesheet"/>
+        <script src="scrollpic.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                new ScrollPic({
+                    containerId: "pic",
+                    prevButtonId: "left",
+                    nextButtonId: "right",
+                    dotListId:"dots",
+                    containerWidth: 840,
+                    pageWidth:210,
+                    speed:10,
+                    space:10,
+                    autoPlay:true,
+                    autoPlayInterval:3000
+                }).initialize();
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <a id="left" href="javascript:void(0);"></a>
+            <ul id="pic">
+                <li><img src="img/1.jpg" /></li>
+                <li><img src="img/2.jpg" /></li>
+                <li><img src="img/3.jpg" /></li>
+                <li><img src="img/4.jpg" /></li>
+                <li><img src="img/5.jpg" /></li>
+                <li><img src="img/6.jpg" /></li>
+                <li><img src="img/7.jpg" /></li>
+                <li><img src="img/8.jpg" /></li>
+            </ul>
+            <a id="right" href="javascript:void(0);"></a>
+            <div id="dots"></div>
+            <div class="clearit"></div>
+        </div>
+    </body>
+</html>
+
