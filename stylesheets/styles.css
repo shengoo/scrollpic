@@ -354,3 +354,60 @@ footer p + p {
     content: 'at http://github.com/';
   }
 }
+
+
+.clearit
+{
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+#pic
+{
+    width: 554px;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#pic li
+{
+    float: left;
+    margin: 5px;
+}
+#left, #right
+{
+    display: block;
+    width: 22px;
+    height: 100%;
+    float: left;
+}
+#left
+{
+    background: url(img/left.png) no-repeat center;
+}
+#right
+{
+    background: url(img/right.png) no-repeat center;
+}
+
+#dots {
+    position: absolute;
+bottom: 0;
+height: 30px;
+z-index: 99;
+left: 0;
+width: 100%;
+    background-color: #999999;
+    text-align: center;
+}
+#dots span {
+    float: left;
+width: 22px;
+height: 22px;
+cursor: pointer;
+}
+.dotItem{background:url(img/point.png) 0px 0px  no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='css/img/point.png');}
+.dotItemOn{background:url(img/point_cur.png) 0px 0px  no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='css/img/point_cur.png');}
