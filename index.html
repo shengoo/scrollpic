@@ -29,9 +29,9 @@
                 <h3>
                     Demo</h3>
 
-                <div style="height: 140px;border: 1px solid #999;text-align: center;position: relative;">
-                    <a id="left" href="javascript:void(0);"></a>
-                    <ul id="pic">
+                <div style="height: 110px;">
+                    <a id="left" class="toLeft" href="javascript:void(0);"></a>
+                    <ul id="pic" class="pics">
                         <li><img src="images/1.jpg" style="width: 200px;height: 100px;" /></li>
                         <li><img src="images/2.jpg" style="width: 200px;height: 100px;" /></li>
                         <li><img src="images/3.jpg" style="width: 200px;height: 100px;" /></li>
@@ -41,19 +41,49 @@
                         <li><img src="images/7.jpg" style="width: 200px;height: 100px;" /></li>
                         <li><img src="images/8.jpg" style="width: 200px;height: 100px;" /></li>
                     </ul>
-                    <a id="right" href="javascript:void(0);"></a>
-                    <div id="dots"></div>
+                    <a id="right" class="toRight" href="javascript:void(0);"></a>
                     <div class="clearit"></div>
                 </div>
-                <h3>to use</h3>
+                <p>to use
                 <pre><code>
                 new ScrollPic({
                     containerId: "pic",
                     prevButtonId: "left",
                     nextButtonId: "right",
-                    dotListId: "dots",
-                    containerWidth: 554,
+                    containerWidth: 630,
                     pageWidth: 210,
+                    speed: 10,
+                    space: 10,
+                    autoPlay: true,
+                    autoPlayInterval: 3000
+                }).initialize();
+</code></pre>
+</p>
+                <h3>single pic with dots</h3>
+                <div style="height: 320px;width: 460px;margin: 10px auto;background-color: white;position: relative;">
+                    <a id="left2" class="toLeft" href="javascript:void(0);"></a>
+                    <ul id="pic2" class="pics2">
+                        <li><img src="images/1.jpg" /></li>
+                        <li><img src="images/2.jpg" /></li>
+                        <li><img src="images/3.jpg" /></li>
+                        <li><img src="images/4.jpg" /></li>
+                        <li><img src="images/5.jpg" /></li>
+                        <li><img src="images/6.jpg" /></li>
+                        <li><img src="images/7.jpg"/></li>
+                        <li><img src="images/8.jpg" /></li>
+                    </ul>
+                    <a id="right2" class="toRight" href="javascript:void(0);"></a>
+                    <div id="dots2" class="dots"></div>
+                    <div class="clearit"></div>
+                </div>
+                <pre><code>
+                new ScrollPic({
+                    containerId: "pic2",
+                    prevButtonId: "left2",
+                    nextButtonId: "right2",
+                    dotListId: "dots2",
+                    containerWidth: 410,
+                    pageWidth: 410,
                     speed: 10,
                     space: 10,
                     autoPlay: true,
@@ -74,9 +104,21 @@
                     containerId: "pic",
                     prevButtonId: "left",
                     nextButtonId: "right",
-                    dotListId: "dots",
-                    containerWidth: 554,
+                    containerWidth: 630,
                     pageWidth: 210,
+                    speed: 10,
+                    space: 10,
+                    autoPlay: true,
+                    autoPlayInterval: 3000
+                }).initialize();
+
+                new ScrollPic({
+                    containerId: "pic2",
+                    prevButtonId: "left2",
+                    nextButtonId: "right2",
+                    dotListId: "dots2",
+                    containerWidth: 410,
+                    pageWidth: 410,
                     speed: 10,
                     space: 10,
                     autoPlay: true,

@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper {
-  width: 640px;
+  width: 720px;
   margin: 0 auto;
   background: #DEDEDE;
   -webkit-border-radius: 8px;
@@ -363,37 +363,59 @@ footer p + p {
     overflow: hidden;
 }
 
-#pic
+.pics
 {
-    width: 554px;
+    width: 630px;
     float: left;
     overflow: hidden;
     height: 100%;
     margin: 0;
     padding: 0;
 }
-#pic li
+.pics li
 {
     float: left;
     margin: 5px;
 }
-#left, #right
+
+.pics2
+{
+    width: 410px;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.pics2 li
+{
+    float: left;
+    margin: 5px;
+}
+
+.pics2 img {
+    width: 400px;
+    height: 270px;
+}
+
+
+.toLeft, .toRight
 {
     display: block;
     width: 22px;
     height: 100%;
     float: left;
 }
-#left
+.toLeft
 {
     background: url(img/left.png) no-repeat center;
 }
-#right
+.toRight
 {
     background: url(img/right.png) no-repeat center;
 }
 
-#dots {
+.dots {
     position: absolute;
 bottom: 0;
 height: 30px;
@@ -403,7 +425,7 @@ width: 100%;
     background-color: #999999;
     text-align: center;
 }
-#dots span {
+.dots span {
     float: left;
 width: 22px;
 height: 22px;
