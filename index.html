@@ -57,8 +57,8 @@
                     autoPlay: true,
                     autoPlayInterval: 3000
                 }).initialize();
-</code></pre>
-</p>
+              </code></pre>
+
                 <h3>single pic with dots</h3>
                 <div style="height: 320px;width: 460px;margin: 10px auto;background-color: white;position: relative;">
                     <a id="left2" class="toLeft" href="javascript:void(0);"></a>
@@ -89,7 +89,42 @@
                     autoPlay: true,
                     autoPlayInterval: 3000
                 }).initialize();
-</code></pre>
+              </code></pre>
+            </section>
+
+            <section>
+              <h3>single pic with dots</h3>
+                <div style="height: 320px;width: 410px;margin: 10px auto;background-color: white;position: relative;">
+                    <ul id="pic3" class="pics2">
+                        <li><img src="images/1.jpg" /></li>
+                        <li><img src="images/2.jpg" /></li>
+                        <li><img src="images/3.jpg" /></li>
+                        <li><img src="images/4.jpg" /></li>
+                        <li><img src="images/5.jpg" /></li>
+                        <li><img src="images/6.jpg" /></li>
+                        <li><img src="images/7.jpg"/></li>
+                        <li><img src="images/8.jpg" /></li>
+                    </ul>
+                    <div class="clearit"></div>
+                </div>
+                <div style="height: 110px;">
+                    <a id="left" class="toLeft" href="javascript:void(0);"></a>
+                    <ul id="pic4" class="pics">
+                        <li><img src="images/2.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/3.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/4.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/5.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/6.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/7.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/8.jpg" style="width: 200px;height: 100px;" /></li>
+                        <li><img src="images/1.jpg" style="width: 200px;height: 100px;" /></li>
+                    </ul>
+                    <a id="right" class="toRight" href="javascript:void(0);"></a>
+                    <div class="clearit"></div>
+                </div>
+                <pre><code>
+                
+              </code></pre>
             </section>
         </div>
         <footer>
@@ -125,6 +160,24 @@
                     autoPlayInterval: 3000
                 }).initialize();
 
+                new ScrollPic({
+                    containerId: "pic3",
+                    containerWidth: 410,
+                    pageWidth: 410,
+                    speed: 10,
+                    space: 10,
+                    autoPlay: true,
+                    autoPlayInterval: 3000
+                }).initialize();
+                new ScrollPic({
+                    containerId: "pic4",
+                    containerWidth: 420,
+                    pageWidth: 210,
+                    speed: 10,
+                    space: 10,
+                    autoPlay: true,
+                    autoPlayInterval: 3000
+                }).initialize();
             }
         </script>
     </body>
